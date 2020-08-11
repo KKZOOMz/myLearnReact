@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import App from './App'
+// import UseContext from './UseContext/UseContext'
+// import UseReducerComp from './UseReducerComp'
+// import OtherHooks from './OtherHooks'
+import CustomHooks from './CustomHooks'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// 演示useState,useEffect
+// ReactDOM.render(<App></App>, document.getElementById('root'))
+// 演示useContex的使用
+// ReactDOM.render(<UseContext></UseContext>, document.getElementById('root'))
+// 演示UseReducerComp
+// ReactDOM.render(<UseReducerComp></UseReducerComp>, document.getElementById('root'))
+// 演示其他hooks
+// ReactDOM.render(<OtherHooks></OtherHooks>, document.getElementById('root'))
+// 演示封装HOOKs
+ReactDOM.render(<CustomHooks></CustomHooks>, document.getElementById('root'))
